@@ -1,0 +1,84 @@
+================================================================================
+YAATRICAB & TOURS - COMPLETE SETUP & DEPLOYMENT GUIDE (SUPABASE & CLOUDFLARE)
+================================================================================
+
+This document guides you step-by-step on how to:
+1. Setup and link your Supabase database (with Users, Activity Logs, and OTP support)
+2. Deploy the website to Cloudflare Pages
+3. Manage Admin & Customer Authentication (Email Login, Phone OTP, Forgot Password)
+4. Audit user & admin activities
+
+--------------------------------------------------------------------------------
+PART 1: DEFAULT LOGIN CREDENTIALS & DEMO ACCOUNTS
+--------------------------------------------------------------------------------
+1. Administrator Account:
+   - Admin Email:    admin@yaatricab.in
+   - Admin ID:       admin
+   - Admin Password: Pass@123
+   - Admin Phone:    9876543210 (Supports OTP Login)
+
+2. Customer / Traveler Account:
+   - Customer Email: customer@gmail.com
+   - Password:       Travel@123
+   - Customer Phone: 9810123456 (Supports OTP Login)
+
+3. New Customers:
+   - Any visitor can click "Login / Sign Up" in the navigation bar to register with
+     their Name, Phone, Email, and Password, or instantly log in using a 6-digit OTP!
+
+--------------------------------------------------------------------------------
+PART 2: AUTHENTICATION & RECOVERY FEATURES
+--------------------------------------------------------------------------------
+1. Email / Username & Password Login:
+   - Available for both customers and admins.
+   - Verifies credentials and creates a secure session token.
+
+2. Phone Number + OTP Login:
+   - Customers & Admins can enter their 10-digit Indian mobile number.
+   - Click "Send OTP" -> a 6-digit verification code is generated with a 5-minute expiry.
+   - On the web interface, an interactive demo alert appears showing the OTP code with
+     an "Auto-fill OTP" button for instant testing!
+   - Verifies OTP and instantly logs the user in password-free.
+
+3. Forgot ID & Password (OTP Recovery):
+   - Click "Forgot Password?" on the login dialog.
+   - Enter your registered email or phone number -> Click "Get OTP".
+   - Enter the 6-digit code and set your new password.
+   - Account password is updated immediately!
+
+4. User Account Hub & Activity History:
+   - Logged-in customers can click their name avatar to open "My Account".
+   - "My Trips & Inquiries": View all submitted trips and live status updates.
+   - "Account Activity Log": View timestamped history of logins, password resets, and bookings.
+
+5. Admin Activity Audit Trail:
+   - Log into Admin Panel -> Click the "Audit Logs" tab (activity icon).
+   - Shows a chronological record of all administrative actions:
+     * User/Admin logins
+     * Status updates on customer inquiries
+     * Added or deleted tourist attractions
+     * Published or deleted tour packages
+     * Added or removed administrator accounts
+
+--------------------------------------------------------------------------------
+PART 3: SUPABASE DATABASE SETUP
+--------------------------------------------------------------------------------
+1. Log in to https://supabase.com and create a project.
+2. Go to "SQL Editor" -> "New query".
+3. Copy all contents of `supabase_schema.sql` and click "Run".
+   - Tables created: `users`, `inquiries`, `activity_logs`, `otp_codes`, `tour_plans`,
+     `visiting_sites`, `gallery_items`, `admins`, `site_settings`.
+4. Copy "Project URL" and "anon key" from Project Settings -> API.
+5. In `.env`:
+   VITE_SUPABASE_URL="https://YOUR_PROJECT.supabase.co"
+   VITE_SUPABASE_ANON_KEY="YOUR_ANON_KEY"
+
+--------------------------------------------------------------------------------
+PART 4: CLOUDFLARE PAGES HOSTING
+--------------------------------------------------------------------------------
+1. Connect your repository to Cloudflare Pages (https://dash.cloudflare.com).
+2. Build command: `npm run build`
+3. Output directory: `dist`
+4. Deploy! All routing is handled by `public/_redirects` and HTTP security headers
+   are enforced via `public/_headers`.
+================================================================================
