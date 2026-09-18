@@ -127,11 +127,14 @@ ALTER TABLE public.gallery_items ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.admins ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.site_settings ENABLE ROW LEVEL SECURITY;
 
-CREATE POLICY "Public can insert inquiries" ON public.inquiries FOR INSERT WITH CHECK (true);
-CREATE POLICY "Public can read tour plans" ON public.tour_plans FOR SELECT USING (true);
-CREATE POLICY "Public can read visiting sites" ON public.visiting_sites FOR SELECT USING (true);
-CREATE POLICY "Public can read gallery items" ON public.gallery_items FOR SELECT USING (true);
-CREATE POLICY "Public can read site settings" ON public.site_settings FOR SELECT USING (true);
+CREATE POLICY "Public all inquiries" ON public.inquiries FOR ALL USING (true) WITH CHECK (true);
+CREATE POLICY "Public all activity_logs" ON public.activity_logs FOR ALL USING (true) WITH CHECK (true);
+CREATE POLICY "Public all tour_plans" ON public.tour_plans FOR ALL USING (true) WITH CHECK (true);
+CREATE POLICY "Public all visiting_sites" ON public.visiting_sites FOR ALL USING (true) WITH CHECK (true);
+CREATE POLICY "Public all gallery_items" ON public.gallery_items FOR ALL USING (true) WITH CHECK (true);
+CREATE POLICY "Public all site_settings" ON public.site_settings FOR ALL USING (true) WITH CHECK (true);
+CREATE POLICY "Public all admins" ON public.admins FOR ALL USING (true) WITH CHECK (true);
+CREATE POLICY "Public all users" ON public.users FOR ALL USING (true) WITH CHECK (true);
 
 -- ==============================================================================
 -- INITIAL SEED DATA
@@ -174,3 +177,17 @@ VALUES
         'A rejuvenating spiritual getaway to the holy banks of River Ganga with peaceful temple visits.',
         true
     );
+
+-- Initial Inquiries
+INSERT INTO public.inquiries (customer_name, customer_phone, customer_email, pickup_location, drop_location, travel_date, travel_time, travel_reason, passengers_count, car_type, notes, status)
+VALUES
+    ('Rajesh Verma', '9810123456', 'rajesh.v@gmail.com', 'Delhi Aerocity', 'Jaipur', '2026-09-20', '07:00 AM', 'Family Vacation', 4, 'Innova Crysta (Premium SUV)', 'Need car with child seat and polite driver for 3 days sightseeing.', 'New'),
+    ('Amitabh Joshi', '9822334455', 'amitabh.j@tcs.com', 'Mumbai Airport T2', 'Pune Hinjewadi', '2026-09-22', '11:30 AM', 'Business', 2, 'Sedan (Dzire / Etios)', 'Urgent corporate travel, require GST invoice.', 'Contacted'),
+    ('Sunita Deshmukh', '9168741540', 'sunita.d@gmail.com', 'Pune Station', 'Shirdi', '2026-09-25', '06:00 AM', 'Pilgrimage', 5, 'Ertiga (Family MPV)', 'Shirdi Darshan same day return.', 'New');
+
+-- Initial Activity Logs
+INSERT INTO public.activity_logs (user_id, user_identifier, role, action_type, description)
+VALUES
+    ('admin-1', 'admin', 'admin', 'SYSTEM_INIT', 'System initialized and connected to Supabase database'),
+    ('admin-1', 'admin', 'admin', 'USER_LOGIN', 'Admin logged in via credentials'),
+    ('usr-1', '9810123456', 'customer', 'TRIP_INQUIRY_SUBMITTED', 'Submitted inquiry for Delhi Aerocity to Jaipur (Innova Crysta)');
