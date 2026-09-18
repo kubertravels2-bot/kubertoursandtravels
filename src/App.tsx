@@ -25,7 +25,7 @@ export const App: React.FC = () => {
   const [currentUser, setCurrentUser] = useState<User | null>(() => authService.getCurrentUser());
 
   // Active search selections
-  const [selectedDestination, setSelectedDestination] = useState('Jaipur');
+  const [selectedDestination, setSelectedDestination] = useState('');
   const [selectedReason, setSelectedReason] = useState<TravelReason>('Family Vacation');
 
   // Dynamic datasets from database

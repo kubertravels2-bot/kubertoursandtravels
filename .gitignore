@@ -12,10 +12,11 @@ node_modules
 dist
 dist-ssr
 
-# Environment files
+# Environment and credentials files
 .env
 .env.*
 !.env.example
+PROJECT_CONNECTIONS_AND_CREDENTIALS.txt
 
 # Vercel
 .vercel

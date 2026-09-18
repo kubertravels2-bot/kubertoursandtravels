@@ -16,8 +16,8 @@ export const NearbySitesShowcase: React.FC<NearbySitesShowcaseProps> = ({
   onSelectCity
 }) => {
   // Normalize destination text
-  const cleanDest = destination.trim().toLowerCase();
-  const isShowAll = cleanDest === 'all' || cleanDest === 'all cities';
+  const cleanDest = (destination || '').trim().toLowerCase();
+  const isShowAll = !cleanDest || cleanDest === 'all' || cleanDest === 'all cities';
 
   // Filter sites matching destination city or show all
   let matchedSites = isShowAll

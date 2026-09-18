@@ -71,11 +71,11 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({
     ? settings.popular_destinations 
     : POPULAR_DESTINATIONS;
 
-  const [pickup, setPickup] = useState('Pune');
+  const [pickup, setPickup] = useState('');
   const [drop, setDrop] = useState(() => {
     return selectedDestination && selectedDestination.toLowerCase() !== 'akira' && selectedDestination.toLowerCase() !== 'all' 
       ? selectedDestination 
-      : 'Goa';
+      : '';
   });
 
   // Keep drop location synchronized with destination clicks
@@ -115,19 +115,18 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({
     e.preventDefault();
     setError('');
 
-    // Prevent browser autofill inserting system username 'Akira' or invalid values into drop
-    let sanitizedDrop = drop.trim();
-    if (!sanitizedDrop || sanitizedDrop.toLowerCase() === 'akira') {
-      sanitizedDrop = selectedDestination && selectedDestination.toLowerCase() !== 'akira' && selectedDestination.toLowerCase() !== 'all'
-        ? selectedDestination 
-        : 'Goa';
-      setDrop(sanitizedDrop);
+    const sanitizedPickup = pickup.trim();
+    const sanitizedDrop = drop.trim();
+
+    // Validation
+    if (!sanitizedPickup || sanitizedPickup.toLowerCase() === 'akira') {
+      setError('Please enter your pick-up location.');
+      return;
     }
 
-    let sanitizedPickup = pickup.trim();
-    if (!sanitizedPickup || sanitizedPickup.toLowerCase() === 'akira') {
-      sanitizedPickup = 'Pune';
-      setPickup('Pune');
+    if (!sanitizedDrop || sanitizedDrop.toLowerCase() === 'akira') {
+      setError('Please enter your destination / drop location.');
+      return;
     }
 
     // Validation
