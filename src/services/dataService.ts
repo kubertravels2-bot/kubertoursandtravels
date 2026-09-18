@@ -250,54 +250,136 @@ const INITIAL_TOUR_PLANS: TourPlan[] = [
 ];
 
 const INITIAL_GALLERY: GalleryItem[] = [
+  // 1. Maharashtra - Mahabaleshwar
   {
-    id: 'gal-1',
-    title: 'Rajasthan Royal Heritage Vacation',
-    location: 'Jaipur & Udaipur',
-    category: 'Heritage',
-    image_url: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80',
-    caption: 'Booked an Innova Crysta for 6 family members. Clean car, extremely polite driver Dinesh ji who guided us to the best Rajasthani thali!',
-    traveler_name: 'Sharma Family, Delhi NCR',
-    rating: 5
-  },
-  {
-    id: 'gal-2',
-    title: 'Snowboarding at Solang Valley',
-    location: 'Manali, Himachal Pradesh',
+    id: 'gal-mh-1',
+    title: 'Mahabaleshwar & Western Ghats Valley Retreat',
+    location: 'Mahabaleshwar, Maharashtra',
     category: 'Hill Station',
-    image_url: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80',
-    caption: 'Awesome 5-day tour. Our driver was skilled on mountain curves and snowy roads. Zero stress, 100% fun.',
-    traveler_name: 'Aakash, Neeraj & Friends',
+    image_url: 'https://images.unsplash.com/photo-1596401057633-54a8fe8ef647?auto=format&fit=crop&w=800&q=80',
+    caption: 'Family holiday booked from Pune. Clean Ertiga, smooth drive through Pasarni Ghat and fresh strawberry farm tour.',
+    traveler_name: 'Pawar Family, Pune',
     rating: 5
   },
+  // 2. Maharashtra - Shirdi & Pune
   {
-    id: 'gal-3',
-    title: 'Sunrise at Taj Mahal',
+    id: 'gal-mh-2',
+    title: 'Divine Shirdi Sai Baba & Historic Forts Tour',
+    location: 'Shirdi & Pune, Maharashtra',
+    category: 'Spiritual',
+    image_url: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80',
+    caption: 'Same-day return yatra from Pune. On-time 5 AM pickup, VIP darshan assistance, and comfortable AC sedan drive.',
+    traveler_name: 'Suresh & Meena Deshmukh, Kothrud',
+    rating: 5
+  },
+  // 3. Uttar Pradesh - Agra Taj Mahal
+  {
+    id: 'gal-up-1',
+    title: 'Sunrise Marvel at the Taj Mahal',
     location: 'Agra, Uttar Pradesh',
     category: 'Heritage',
     image_url: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80',
-    caption: 'Same-day round trip from Gurgaon. Picked up right on time at 5:00 AM. Fast toll tags and great driving.',
-    traveler_name: 'Vikram & Ananya',
+    caption: 'Chauffeur picked us up early morning. Fast Yamuna Expressway drive, seamless guide arrangement and royal monument tour.',
+    traveler_name: 'Vikram & Ananya Malhotra, Delhi',
     rating: 5
   },
+  // 4. Uttar Pradesh - Varanasi Ganga Ghats
   {
-    id: 'gal-4',
-    title: 'Devbhoomi Ganga Aarti Visit',
-    location: 'Varanasi & Haridwar',
+    id: 'gal-up-2',
+    title: 'Sacred Ganga Aarti & Kashi Vishwanath Yatra',
+    location: 'Varanasi, Uttar Pradesh',
     category: 'Spiritual',
     image_url: 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80',
-    caption: 'Organized a spiritual yatra for my elderly parents. Driver helped them with boarding and waited patiently at every temple.',
+    caption: 'Magnificent evening Dashashwamedh Ghat aarti with boat ride. The chauffeur escorted our senior parents patiently.',
     traveler_name: 'Rameshwar Kulkarni, Pune',
     rating: 5
   },
+  // 5. Madhya Pradesh - Gwalior Fort
   {
-    id: 'gal-5',
-    title: 'Goa Coastal Roadtrip with Kids',
-    location: 'South Goa Serenity',
-    category: 'Beach',
-    image_url: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80',
-    caption: 'Air-conditioned Ertiga for 4 days. Smooth airport transfers and reliable daily sightseeing around Palolem & Fort Aguada.',
-    traveler_name: 'Pooja Hegde, Bengaluru',
+    id: 'gal-mp-1',
+    title: 'Majestic Gwalior Fort & Scindia Palace Circuit',
+    location: 'Gwalior, Madhya Pradesh',
+    category: 'Heritage',
+    image_url: 'https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&w=800&q=80',
+    caption: 'Imposing hill fortress known as the Pearl among fortresses in India. Super comfortable Innova Crysta for our Madhya Pradesh heritage circuit.',
+    traveler_name: 'Dr. Arvind & Neha Saxena, Bhopal',
+    rating: 5
+  },
+  // 6. Madhya Pradesh - Ujjain Mahakaleshwar
+  {
+    id: 'gal-mp-2',
+    title: 'Holy Mahakaleshwar & Shipra River Yatra',
+    location: 'Ujjain, Madhya Pradesh',
+    category: 'Spiritual',
+    image_url: 'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=800&q=80',
+    caption: 'Peaceful pilgrimage covering Mahakal temple and Ram Ghat. Chauffeur ensured timely reporting for the sacred Bhasma Aarti.',
+    traveler_name: 'Gupta Family, Indore',
+    rating: 5
+  },
+  // 7. Andhra Pradesh - Tirupati Balaji
+  {
+    id: 'gal-ap-1',
+    title: 'Tirumala Venkateswara Swamy Pilgrimage',
+    location: 'Tirupati, Andhra Pradesh',
+    category: 'Spiritual',
+    image_url: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80',
+    caption: 'Soulful darshan of Lord Balaji. Dedicated cab took us smoothly across the Tirumala ghat roads and back.',
+    traveler_name: 'Kalyan & Sunitha Reddy, Hyderabad',
+    rating: 5
+  },
+  // 8. Andhra Pradesh - Araku Valley
+  {
+    id: 'gal-ap-2',
+    title: 'Misty Araku Valley & Eastern Ghats Drive',
+    location: 'Araku Valley, Andhra Pradesh',
+    category: 'Hill Station',
+    image_url: 'https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=800&q=80',
+    caption: 'Serene Eastern Ghats drive from Vizag to Araku Valley. Spectacular Million-year-old Borra caves and fresh coffee plantations.',
+    traveler_name: 'Aditya, Rohit & Batchmates',
+    rating: 5
+  },
+  // 9. Gujarat - Statue of Unity
+  {
+    id: 'gal-gj-1',
+    title: 'Grand Statue of Unity & Valley of Flowers Tour',
+    location: 'Kevadia, Gujarat',
+    category: 'Heritage',
+    image_url: 'https://images.unsplash.com/photo-1585130401366-fe05a8d813c4?auto=format&fit=crop&w=800&q=80',
+    caption: 'Monumental 182-meter statue experience. Our Innova was prompt, AC was powerful, and laser light show was unforgettable.',
+    traveler_name: 'Patel Family, Ahmedabad',
+    rating: 5
+  },
+  // 10. Gujarat - Rann of Kutch
+  {
+    id: 'gal-gj-2',
+    title: 'Enchanting White Rann Full-Moon Safari',
+    location: 'Rann of Kutch, Gujarat',
+    category: 'Heritage',
+    image_url: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=800&q=80',
+    caption: 'Full-moon glow across the vast white salt desert and colorful Kutchi handicraft shopping in Dhordo village.',
+    traveler_name: 'Nitin & Bhavna Shah, Surat',
+    rating: 5
+  },
+  // 11. Delhi - Qutub Minar
+  {
+    id: 'gal-dl-1',
+    title: 'Capital Heritage: Qutub Minar & Mughal Monuments',
+    location: 'New Delhi, Delhi',
+    category: 'Heritage',
+    image_url: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=800&q=80',
+    caption: 'Full-day Delhi sightseeing covering India Gate, Qutub Minar, and Humayun Tomb. The chauffeur knew every shortcut avoiding traffic.',
+    traveler_name: 'Sarah & Mark (UK Travelers)',
+    rating: 5
+  },
+  // 12. Delhi - Red Fort & Old Delhi
+  {
+    id: 'gal-dl-2',
+    title: 'Red Fort Splendor & Chandni Chowk Delights',
+    location: 'Old Delhi, Delhi',
+    category: 'Heritage',
+    image_url: 'https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=800&q=80',
+    caption: 'Iconic 17th-century Mughal red sandstone fort followed by legendary parathas in Chandni Chowk. Top notch cab service.',
+    traveler_name: 'Kapoor Family, Gurgaon',
     rating: 5
   }
 ];
@@ -639,7 +721,7 @@ export const dataService = {
   async getGalleryItems(): Promise<GalleryItem[]> {
     if (isSupabaseConfigured && supabase) {
       const { data, error } = await supabase.from('gallery_items').select('*');
-      if (!error && data) return data as GalleryItem[];
+      if (!error && data && data.length > 0) return data as GalleryItem[];
     }
     return getStorage<GalleryItem[]>('yaatri_gallery', INITIAL_GALLERY);
   },
