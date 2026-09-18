@@ -256,7 +256,7 @@ const INITIAL_GALLERY: GalleryItem[] = [
     title: 'Mahabaleshwar & Western Ghats Valley Retreat',
     location: 'Mahabaleshwar, Maharashtra',
     category: 'Hill Station',
-    image_url: 'https://images.unsplash.com/photo-1596401057633-54a8fe8ef647?auto=format&fit=crop&w=800&q=80',
+    image_url: '/gallery/mahabaleshwar.jpg',
     caption: 'Family holiday booked from Pune. Clean Ertiga, smooth drive through Pasarni Ghat and fresh strawberry farm tour.',
     traveler_name: 'Pawar Family, Pune',
     rating: 5
@@ -267,7 +267,7 @@ const INITIAL_GALLERY: GalleryItem[] = [
     title: 'Divine Shirdi Sai Baba & Historic Forts Tour',
     location: 'Shirdi & Pune, Maharashtra',
     category: 'Spiritual',
-    image_url: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80',
+    image_url: '/gallery/shirdi.jpg',
     caption: 'Same-day return yatra from Pune. On-time 5 AM pickup, VIP darshan assistance, and comfortable AC sedan drive.',
     traveler_name: 'Suresh & Meena Deshmukh, Kothrud',
     rating: 5
@@ -278,7 +278,7 @@ const INITIAL_GALLERY: GalleryItem[] = [
     title: 'Sunrise Marvel at the Taj Mahal',
     location: 'Agra, Uttar Pradesh',
     category: 'Heritage',
-    image_url: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80',
+    image_url: '/gallery/taj-mahal.jpg',
     caption: 'Chauffeur picked us up early morning. Fast Yamuna Expressway drive, seamless guide arrangement and royal monument tour.',
     traveler_name: 'Vikram & Ananya Malhotra, Delhi',
     rating: 5
@@ -289,7 +289,7 @@ const INITIAL_GALLERY: GalleryItem[] = [
     title: 'Sacred Ganga Aarti & Kashi Vishwanath Yatra',
     location: 'Varanasi, Uttar Pradesh',
     category: 'Spiritual',
-    image_url: 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80',
+    image_url: '/gallery/varanasi.jpg',
     caption: 'Magnificent evening Dashashwamedh Ghat aarti with boat ride. The chauffeur escorted our senior parents patiently.',
     traveler_name: 'Rameshwar Kulkarni, Pune',
     rating: 5
@@ -300,7 +300,7 @@ const INITIAL_GALLERY: GalleryItem[] = [
     title: 'Majestic Gwalior Fort & Scindia Palace Circuit',
     location: 'Gwalior, Madhya Pradesh',
     category: 'Heritage',
-    image_url: 'https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&w=800&q=80',
+    image_url: '/gallery/gwalior-fort.jpg',
     caption: 'Imposing hill fortress known as the Pearl among fortresses in India. Super comfortable Innova Crysta for our Madhya Pradesh heritage circuit.',
     traveler_name: 'Dr. Arvind & Neha Saxena, Bhopal',
     rating: 5
@@ -311,7 +311,7 @@ const INITIAL_GALLERY: GalleryItem[] = [
     title: 'Holy Mahakaleshwar & Shipra River Yatra',
     location: 'Ujjain, Madhya Pradesh',
     category: 'Spiritual',
-    image_url: 'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=800&q=80',
+    image_url: '/gallery/mahakaleshwar-ujjain.jpg',
     caption: 'Peaceful pilgrimage covering Mahakal temple and Ram Ghat. Chauffeur ensured timely reporting for the sacred Bhasma Aarti.',
     traveler_name: 'Gupta Family, Indore',
     rating: 5
@@ -322,7 +322,7 @@ const INITIAL_GALLERY: GalleryItem[] = [
     title: 'Tirumala Venkateswara Swamy Pilgrimage',
     location: 'Tirupati, Andhra Pradesh',
     category: 'Spiritual',
-    image_url: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80',
+    image_url: '/gallery/tirupati-balaji.jpg',
     caption: 'Soulful darshan of Lord Balaji. Dedicated cab took us smoothly across the Tirumala ghat roads and back.',
     traveler_name: 'Kalyan & Sunitha Reddy, Hyderabad',
     rating: 5
@@ -333,7 +333,7 @@ const INITIAL_GALLERY: GalleryItem[] = [
     title: 'Misty Araku Valley & Eastern Ghats Drive',
     location: 'Araku Valley, Andhra Pradesh',
     category: 'Hill Station',
-    image_url: 'https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=800&q=80',
+    image_url: '/gallery/araku-valley.jpg',
     caption: 'Serene Eastern Ghats drive from Vizag to Araku Valley. Spectacular Million-year-old Borra caves and fresh coffee plantations.',
     traveler_name: 'Aditya, Rohit & Batchmates',
     rating: 5
@@ -344,7 +344,7 @@ const INITIAL_GALLERY: GalleryItem[] = [
     title: 'Grand Statue of Unity & Valley of Flowers Tour',
     location: 'Kevadia, Gujarat',
     category: 'Heritage',
-    image_url: 'https://images.unsplash.com/photo-1585130401366-fe05a8d813c4?auto=format&fit=crop&w=800&q=80',
+    image_url: '/gallery/statue-of-unity.jpg',
     caption: 'Monumental 182-meter statue experience. Our Innova was prompt, AC was powerful, and laser light show was unforgettable.',
     traveler_name: 'Patel Family, Ahmedabad',
     rating: 5
@@ -355,7 +355,7 @@ const INITIAL_GALLERY: GalleryItem[] = [
     title: 'Enchanting White Rann Full-Moon Safari',
     location: 'Rann of Kutch, Gujarat',
     category: 'Heritage',
-    image_url: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=800&q=80',
+    image_url: '/gallery/rann-of-kutch.jpg',
     caption: 'Full-moon glow across the vast white salt desert and colorful Kutchi handicraft shopping in Dhordo village.',
     traveler_name: 'Nitin & Bhavna Shah, Surat',
     rating: 5
@@ -366,7 +366,7 @@ const INITIAL_GALLERY: GalleryItem[] = [
     title: 'Capital Heritage: Qutub Minar & Mughal Monuments',
     location: 'New Delhi, Delhi',
     category: 'Heritage',
-    image_url: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=800&q=80',
+    image_url: '/gallery/qutub-minar.jpg',
     caption: 'Full-day Delhi sightseeing covering India Gate, Qutub Minar, and Humayun Tomb. The chauffeur knew every shortcut avoiding traffic.',
     traveler_name: 'Sarah & Mark (UK Travelers)',
     rating: 5
@@ -377,7 +377,7 @@ const INITIAL_GALLERY: GalleryItem[] = [
     title: 'Red Fort Splendor & Chandni Chowk Delights',
     location: 'Old Delhi, Delhi',
     category: 'Heritage',
-    image_url: 'https://images.unsplash.com/photo-1598324789736-4861f89564a0?auto=format&fit=crop&w=800&q=80',
+    image_url: '/gallery/red-fort-delhi.jpg',
     caption: 'Iconic 17th-century Mughal red sandstone fort followed by legendary parathas in Chandni Chowk. Top notch cab service.',
     traveler_name: 'Kapoor Family, Gurgaon',
     rating: 5
