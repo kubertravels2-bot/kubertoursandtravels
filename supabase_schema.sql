@@ -161,7 +161,7 @@ VALUES
         14999, 
         'Delhi', 
         'Delhi - Agra - Jaipur - Delhi', 
-        'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1000&q=80', 
+        '/gallery/taj-mahal.jpg', 
         ARRAY['Taj Mahal & Agra Fort with sunrise guide', 'Amber Fort, Jal Mahal & Hawa Mahal in Jaipur', 'Dedicated AC Sedan / SUV with Chauffeur', 'All Tolls, State Taxes & Driver Allowance included'], 
         'Experience India''s most iconic cultural route connecting Delhi, Agra, and the pink city of Jaipur in comfort.',
         true
@@ -172,7 +172,7 @@ VALUES
         9499, 
         'Delhi', 
         'Haridwar - Rishikesh', 
-        'https://images.unsplash.com/photo-1588096344356-9b5774a3f3b9?auto=format&fit=crop&w=1000&q=80', 
+        '/gallery/haridwar-rishikesh.jpg', 
         ARRAY['VIP Ganga Aarti darshan at Har Ki Pauri', 'Ram Jhula & Lakshman Jhula', 'River Rafting & Camping', 'Comfortable private cab with polite hill-driver'], 
         'A rejuvenating spiritual getaway to the holy banks of River Ganga with peaceful temple visits.',
         true

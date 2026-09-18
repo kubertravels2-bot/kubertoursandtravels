@@ -186,7 +186,7 @@ const INITIAL_TOUR_PLANS: TourPlan[] = [
     price: 14999,
     starting_city: 'Delhi',
     destinations: 'Delhi - Agra - Jaipur - Delhi',
-    image_url: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1000&q=80',
+    image_url: '/gallery/taj-mahal.jpg',
     highlights: [
       'Taj Mahal & Agra Fort with sunrise guide',
       'Amber Fort, Jal Mahal & Hawa Mahal in Jaipur',
@@ -203,7 +203,7 @@ const INITIAL_TOUR_PLANS: TourPlan[] = [
     price: 9499,
     starting_city: 'Delhi / NCR',
     destinations: 'Delhi - Haridwar - Rishikesh',
-    image_url: 'https://images.unsplash.com/photo-1588096344356-9b5774a3f3b9?auto=format&fit=crop&w=1000&q=80',
+    image_url: '/gallery/haridwar-rishikesh.jpg',
     highlights: [
       'VIP Ganga Aarti darshan at Har Ki Pauri',
       'Ram Jhula, Lakshman Jhula & Beatles Ashram',
